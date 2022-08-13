@@ -4,6 +4,7 @@ I tried to replicate my usual workflow and scaffolding with a couple of differen
 
 1. Using Pinia instead of Vuex
 2. Using Fetch API instead of Axios
+3. Did not include pre-commit linting and formating; Did not include use of env vars for relevant data such as API URL; Did not do any error handling; etc (time constraint)
 
 Pinia's TS support seems fantastic and I liked being able to return promises in the store actions so as to be able to combine the action calls with the <Suspense></Suspense> tags for async setup function components. 
 
