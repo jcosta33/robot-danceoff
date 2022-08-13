@@ -1,14 +1,25 @@
 # Robot dance off app
 
 I tried to replicate my usual workflow and scaffolding with a couple of differences:
+
 1. Using Pinia instead of Vuex
 2. Using Fetch API instead of Axios
 
-Pinia's TS support seems fantastic and I liked being able to return promises in the store actions so as to be able to combine the action calls with the <Suspense></Suspense> tags for async setup function components. I still think Axios is probably the way to go for most projects as it simply adds too many quality of life features to ignore but for this case I didn't miss them. The rest is very representative of my usual approach. 
+Pinia's TS support seems fantastic and I liked being able to return promises in the store actions so as to be able to combine the action calls with the <Suspense></Suspense> tags for async setup function components. I still think Axios is probably the way to go for most projects as it simply adds too many quality of life features to ignore but for this case I didn't miss them. The rest is very representative of my usual approach.
 
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+To run:
+
+```shell
+npm run dev
+```
+
+To build:
+
+```shell
+npm run build
+```
 
 ## Recommended IDE Setup
 
