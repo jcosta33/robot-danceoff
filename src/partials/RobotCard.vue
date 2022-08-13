@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Robot } from "@/models/robot";
-import { defineProps, PropType } from "vue";
+import { PropType } from "vue";
 
 defineProps({
   robot: Object as PropType<Robot>,

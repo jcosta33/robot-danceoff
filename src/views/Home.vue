@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <section id="home">
     <h1 class="title is-1">Robot Danceoff</h1>
@@ -16,10 +14,7 @@
         </router-link>
       </div>
       <div class="column is-4">
-        <router-link
-          to="/leaderboard"
-          class="box is-primary has-text-centered"
-        >
+        <router-link to="/leaderboard" class="box is-primary has-text-centered">
           <span class="icon">
             <i class="material-icons-outlined">leaderboard</i>
           </span>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Navbar from "@/partials/Navbar.vue";
 import Popup from "@/components/popup.vue";
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 import { useStore } from "./store";
 const store = useStore();
 const popups = computed(() => store.popups);
@@ -12,9 +12,18 @@ const popups = computed(() => store.popups);
   <div class="container">
     <router-view />
   </div>
-  <div class="popup-container" v-if="popups.length > 0">
-    <div v-for="(popup, index) in popups" :key="index">
-      <Popup :config="popup" v-if="popup.message" />
+  <div
+    v-if="popups.length > 0"
+    class="popup-container"
+  >
+    <div
+      v-for="(popup, index) in popups"
+      :key="index"
+    >
+      <Popup
+        v-if="popup.message"
+        :config="popup"
+      />
     </div>
   </div>
 </template>

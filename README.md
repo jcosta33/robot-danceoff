@@ -5,7 +5,9 @@ I tried to replicate my usual workflow and scaffolding with a couple of differen
 1. Using Pinia instead of Vuex
 2. Using Fetch API instead of Axios
 
-Pinia's TS support seems fantastic and I liked being able to return promises in the store actions so as to be able to combine the action calls with the <Suspense></Suspense> tags for async setup function components. I still think Axios is probably the way to go for most projects as it simply adds too many quality of life features to ignore but for this case I didn't miss them. The rest is very representative of my usual approach.
+Pinia's TS support seems fantastic and I liked being able to return promises in the store actions so as to be able to combine the action calls with the <Suspense></Suspense> tags for async setup function components. 
+
+I still think Axios is probably the way to go for most projects as it simply adds too many quality of life features to ignore but for this case I didn't miss them. The rest is very representative of my usual approach.
 
 # Vue 3 + TypeScript + Vite
 

@@ -1,9 +1,16 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    class="navbar"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="container">
       <div class="navbar-brand">
         <span class="navbar-item">
-          <img src="@/assets/logo.png" height="50" />
+          <img
+            src="@/assets/logo.png"
+            height="50"
+          >
         </span>
 
         <a
@@ -14,9 +21,9 @@
           data-target="navbarBasicExample"
           @click="isActive = !isActive"
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
         </a>
       </div>
 
@@ -26,18 +33,32 @@
         :class="{ 'is-active': isActive }"
       >
         <div class="navbar-start">
-          <router-link to="/" class="navbar-item">Home</router-link>
-          <router-link to="/robots" class="navbar-item">Robots</router-link>
-          <router-link to="/leaderboard" class="navbar-item"
-            >Leaderboard</router-link
+          <router-link
+            to="/"
+            class="navbar-item"
           >
+            Home
+          </router-link>
+          <router-link
+            to="/robots"
+            class="navbar-item"
+          >
+            Robots
+          </router-link>
+          <router-link
+            to="/leaderboard"
+            class="navbar-item"
+          >
+            Leaderboard
+          </router-link>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
-            <router-link to="/start-danceoff" class="button is-primary">
-              <span class="icon"
-                ><i class="material-icons-outlined">add</i></span
-              >
+            <router-link
+              to="/start-danceoff"
+              class="button is-primary"
+            >
+              <span class="icon"><i class="material-icons-outlined">add</i></span>
               <span>New danceoff!</span>
             </router-link>
           </div>

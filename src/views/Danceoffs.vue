@@ -19,13 +19,28 @@ if (!store.danceoffs.participated) {
 
 <template>
   <section class="section leaderboard">
-    <div class="columns" style="margin-bottom: 2rem">
-      <div class="column"><h3 class="title is-3">Winners</h3></div>
+    <div
+      class="columns"
+      style="margin-bottom: 2rem"
+    >
       <div class="column">
-        <h1 class="title is-1">Leaderboard</h1>
-        <h2 class="subtitle">Shame or glory</h2>
+        <h3 class="title is-3">
+          Winners
+        </h3>
       </div>
-      <div class="column"><h3 class="title is-3">Losers</h3></div>
+      <div class="column">
+        <h1 class="title is-1">
+          Leaderboard
+        </h1>
+        <h2 class="subtitle">
+          Shame or glory
+        </h2>
+      </div>
+      <div class="column">
+        <h3 class="title is-3">
+          Losers
+        </h3>
+      </div>
     </div>
 
     <Suspense v-if="store.danceoffs.participated">
@@ -35,8 +50,8 @@ if (!store.danceoffs.participated) {
       <template #fallback>
         <div class="columns is-multiline">
           <div
-            class="column is-4"
             v-for="index in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            class="column is-4"
           >
             <RobotCard :loading="true" />>
           </div>
